@@ -40,14 +40,13 @@ This project creates a modern digital web presence aimed at converting local dir
 
 ## 📌 Verified Data vs. Project Assumptions
 
-| Business Attribute | Status / Value | Brief Compliance Note |
+| Field | Status | Notes |
 | :--- | :--- | :--- |
-| **Business Name** | Pet Palace[cite: 1, 2] | Verified from client lead[cite: 1, 2] |
-| **Phone Number** | +91 93376 27738[cite: 1, 2] | Active in all `tel:` and WhatsApp links[cite: 3] |
-| **Store Address** | LC 116/9, Manas Rd[cite: 1, 2] | Connected with Google Maps directions CTA[cite: 3] |
-| **Google Rating** | 3.9 Stars (988 Reviews)[cite: 1, 2] | Displayed as official business proof badge[cite: 3] |
-| **Email Address** | *Omitted*[cite: 1, 2] | Excluded intentionally (not provided in lead data)[cite: 1, 2] |
-| **Stock Inventory** | Generic Categories[cite: 2] | Labeled mock categories used instead of fabricated items[cite: 2] |
+| **Phone Number** | Verified | +91 93376 27738 |
+| **Address** | Verified | LC 116/9, Manas Rd, Sailashree Vihar, Bhubaneswar |
+| **Google Rating** | Verified | 3.9★ / 988 reviews |
+| **Email Address** | *Omitted* | Excluded intentionally (not provided in lead data) |
+| **Stock Inventory** | Generic Categories | Labeled mock categories used instead of fabricated items |
 
 ---
 
