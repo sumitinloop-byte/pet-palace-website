@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Palace | Premium Pet Care & Supplies in Sailashree Vihar, Bhubaneswar</title>
+    
+    <!-- Meta & SEO Tags -->
+    <meta name="description" content="Pet Palace offers high-quality pet supplies, nutritious food, cages, and aquatics for dogs, cats, birds, rabbits, and fish in Sailashree Vihar, Bhubaneswar.">
+    <meta name="keywords" content="Pet Store Bhubaneswar, Pet Shop Sailashree Vihar, Dog Food, Cat Supplies, Bird Cages, Aquatics Bhubaneswar, Pet Palace">
+    <meta name="theme-color" content="#ea580c">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pet Palace - Premium Pet Store in Bhubaneswar">
+    <meta property="og:description" content="Top-rated pet care and supplies store at Sailashree Vihar, Chandrasekharpur.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            900: '#7c2d12',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Glassmorphism Effects */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glow-brand {
+            box-shadow: 0 12px 35px -10px rgba(234, 88, 12, 0.35);
+        }
+        .glow-emerald {
+            box-shadow: 0 12px 35px -10px rgba(5, 150, 105, 0.35);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ea580c;
+        }
+    </style>
+</head>
+<body class="bg-slate-900/5 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white pb-20 md:pb-0">
+
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-900 via-brand-600 to-amber-600 text-white text-xs md:text-sm py-2 px-4 text-center font-medium shadow-sm flex items-center justify-center gap-2 relative z-50">
+        <span class="bg-white/20 backdrop-blur-md px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-widest border border-white/20">Bhubaneswar Store</span>
+        <span>🐾 Welcome to Pet Palace Sailashree Vihar! Call Us: <a href="tel:+919337627738" class="underline font-bold hover:text-amber-200 transition">+91 93376 27738</a></span>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 bg-gradient-to-tr from-brand-600 to-amber-500 text-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-105 transition duration-300">
+                    <i class="fa-solid fa-paw text-2xl"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black text-slate-900 tracking-tight block leading-none">Pet Palace</span>
+                    <span class="text-[10px] text-brand-600 font-extrabold uppercase tracking-widest mt-0.5 block">Pet Care & Supplies</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-600">
+                <a href="#about" class="hover:text-brand-600 transition duration-200">About</a>
+                <a href="#categories" class="hover:text-brand-600 transition duration-200">Pet Categories</a>
+                <a href="#supplies" class="hover:text-brand-600 transition duration-200">Supplies</a>
+                <a href="#gallery" class="hover:text-brand-600 transition duration-200">Gallery</a>
+                <a href="#reviews" class="hover:text-brand-600 transition duration-200">Reviews</a>
+                <a href="#faq" class="hover:text-brand-600 transition duration-200">FAQ</a>
+                <a href="#location" class="hover:text-brand-600 transition duration-200">Location</a>
+            </nav>
+
+            <!-- Desktop Action Buttons -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="tel:+919337627738" class="px-4 py-2.5 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-brand-600"></i> Call Store
+                </a>
+                <a href="https://wa.me/919337627738?text=Hi%20Pet%20Palace%2C%20I%20have%20an%20enquiry%20regarding%20pet%20supplies." target="_blank" rel="noopener" class="px-5 py-2.5 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl transition shadow-md glow-emerald flex items-center gap-2 hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Us
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-800 p-2 text-2xl focus:outline-none" aria-label="Open Navigation Menu">
+                <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 px-6 py-6 space-y-4 shadow-2xl transition-all">
+            <a href="#about" class="block text-slate-800 font-bold hover:text-brand-600 py-1 border-b border-slate-100">About Us</a>
+            <a href="#categories" class="block text-slate-800 font-bold hover:text-brand-600 py-1 border-b border-slate-100">What We Serve</a>
+            <a href="#supplies" class="block text-slate-800 font-bold hover:text-brand-600 py-1 border-b border-slate-100">Supplies & Products</a>
+            <a href="#gallery" class="block text-slate-800 font-bold hover:text-brand-600 py-1 border-b border-slate-100">Pet Gallery</a>
+            <a href="#reviews" class="block text-slate-800 font-bold hover:text-brand-600 py-1 border-b border-slate-100">Google Reviews</a>
+            <a href="#faq" class="block text-slate-800 font-bold hover:text-brand-600 py-1 border-b border-slate-100">Frequently Asked Questions</a>
+            <a href="#location" class="block text-slate-800 font-bold hover:text-brand-600 py-1">Location & Directions</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-b from-orange-50/80 via-amber-50/30 to-slate-50/50 py-14 lg:py-24 overflow-hidden">
+            <!-- Background Glowing Orbs -->
+            <div class="absolute -top-20 -right-20 w-[500px] h-[500px] bg-brand-500/15 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute top-1/2 -left-32 w-[400px] h-[400px] bg-amber-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        
+                        <!-- Rating Badge -->
+                        <div class="inline-flex items-center gap-2 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-md border border-slate-200/80">
+                            <span class="bg-amber-500 text-white font-extrabold px-2.5 py-0.5 rounded-full flex items-center gap-1 text-xs">
+                                3.9 <i class="fa-solid fa-star text-[10px]"></i>
+                            </span>
+                            <span class="text-slate-800 font-extrabold text-xs sm:text-sm">988 Verified Google Reviews</span>
+                            <span class="hidden sm:inline text-slate-300">|</span>
+                            <span class="hidden sm:inline-flex text-emerald-700 text-xs font-bold items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Store Active
+                            </span>
+                        </div>
+
+                        <!-- Main Heading -->
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.12]">
+                            Premium Care & Supplies For Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-amber-500">Beloved Pets.</span>
+                        </h1>
+                        
+                        <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+                            Bhubaneswar's trusted neighbourhood pet store supplying nutritional pet food, aquatics, cages, and accessories for <span class="font-bold text-slate-900">Dogs, Cats, Birds, Rabbits, and Fish</span>.
+                        </p>
+
+                        <!-- Call to Actions -->
+                        <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
+                            <a href="https://wa.me/919337627738?text=Hi%20Pet%20Palace%2C%20I%20want%20to%20enquire%20about%20pet%20products." target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold rounded-2xl shadow-xl glow-emerald transition duration-300 text-center flex items-center justify-center gap-3 hover:-translate-y-0.5">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Instant WhatsApp Enquiry
+                            </a>
+                            <a href="https://maps.google.com/?q=Pet+Palace+Sailashree+Vihar+Bhubaneswar" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white font-extrabold rounded-2xl shadow-lg transition duration-300 text-center flex items-center justify-center gap-3 hover:-translate-y-0.5">
+                                <i class="fa-solid fa-location-dot text-brand-500"></i> Get Store Directions
+                            </a>
+                        </div>
+
+                        <!-- Metric Highlights Bar -->
+                        <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-200/80">
+                            <div class="bg-white/80 backdrop-blur-md p-3.5 rounded-2xl border border-slate-200/80 text-center shadow-sm">
+                                <div class="text-brand-600 font-black text-base sm:text-lg">Sailashree Vihar</div>
+                                <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Prime Location</div>
+                            </div>
+                            <div class="bg-white/80 backdrop-blur-md p-3.5 rounded-2xl border border-slate-200/80 text-center shadow-sm">
+                                <div class="text-brand-600 font-black text-base sm:text-lg">5 Categories</div>
+                                <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Pet Expertise</div>
+                            </div>
+                            <div class="bg-white/80 backdrop-blur-md p-3.5 rounded-2xl border border-slate-200/80 text-center shadow-sm">
+                                <div class="text-brand-600 font-black text-base sm:text-lg">Direct WhatsApp</div>
+                                <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Fast Response</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Hero Visual Card -->
+                    <div class="lg:col-span-5 relative">
+                        <!-- Floating Badge Top Left -->
+                        <div class="absolute -top-4 -left-4 z-20 bg-white/95 backdrop-blur-md p-3 rounded-2xl border border-slate-200 shadow-xl hidden sm:flex items-center gap-3 animate-float">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-extrabold text-slate-900">Pet Palace Store</div>
+                                <div class="text-[10px] text-slate-500">Manas Rd, Phase II</div>
+                            </div>
+                        </div>
+
+                        <!-- Main Image Container -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=800" alt="Pet Palace Store Showcase" class="w-full h-[400px] sm:h-[480px] object-cover hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                            
+                            <!-- Bottom Card Badge -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-2xl flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-bold text-lg">
+                                        <i class="fa-solid fa-store"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="font-extrabold text-slate-900 text-sm">Visit In-Person Today</h2>
+                                        <p class="text-[11px] text-slate-600">Chandrasekharpur, Bhubaneswar</p>
+                                    </div>
+                                </div>
+                                <a href="tel:+919337627738" class="text-xs bg-slate-900 hover:bg-slate-800 text-white font-extrabold px-3.5 py-2 rounded-xl transition">Call Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 bg-white border-b border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center space-y-4">
+                    <span class="text-brand-600 font-extrabold text-xs tracking-widest uppercase bg-brand-50 px-4 py-1.5 rounded-full border border-brand-100">About Pet Palace</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">Your Trusted Neighborhood Pet Shop</h2>
+                    <p class="text-slate-600 leading-relaxed text-base sm:text-lg">
+                        Pet Palace is a dedicated neighbourhood pet shop located at LC 116/9, Manas Rd, Phase II, Sailashree Vihar, Chandrasekharpur, Bhubaneswar, Odisha. We specialize in providing essential care products, high-protein nutrition, habitats, and accessories for dogs, cats, birds, rabbits, fish, and aquatic pets.
+                    </p>
+                    <div class="pt-2 flex items-center justify-center gap-2 text-xs font-bold text-slate-500">
+                        <i class="fa-solid fa-shield-check text-emerald-600 text-sm"></i> 988 Verified Google Reviews • Authentic Local Business
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Category Section -->
+        <section id="categories" class="py-16 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-brand-600 font-extrabold text-xs tracking-widest uppercase bg-brand-50 px-4 py-1.5 rounded-full border border-brand-100">What We Serve</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Pets We Cater To</h2>
+                    <p class="text-slate-500 text-sm mt-1">Select a category to view specialized supplies</p>
+                </div>
+
+                <!-- Interactive Category Cards -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+                    
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200/80 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300 group cursor-pointer">
+                        <div class="w-16 h-16 mx-auto bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:bg-brand-600 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-dog"></i>
+                        </div>
+                        <h3 class="font-extrabold text-slate-900 text-lg">Dogs</h3>
+                        <p class="text-xs text-slate-500 mt-1">Food & Accessories</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200/80 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300 group cursor-pointer">
+                        <div class="w-16 h-16 mx-auto bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:bg-amber-500 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-cat"></i>
+                        </div>
+                        <h3 class="font-extrabold text-slate-900 text-lg">Cats</h3>
+                        <p class="text-xs text-slate-500 mt-1">Litter & Toys</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200/80 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300 group cursor-pointer">
+                        <div class="w-16 h-16 mx-auto bg-sky-50 text-sky-600 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:bg-sky-500 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-crow"></i>
+                        </div>
+                        <h3 class="font-extrabold text-slate-900 text-lg">Birds</h3>
+                        <p class="text-xs text-slate-500 mt-1">Seeds & Cages</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200/80 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300 group cursor-pointer">
+                        <div class="w-16 h-16 mx-auto bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-otter"></i>
+                        </div>
+                        <h3 class="font-extrabold text-slate-900 text-lg">Rabbits</h3>
+                        <p class="text-xs text-slate-500 mt-1">Feed & Hutches</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200/80 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition duration-300 group cursor-pointer col-span-2 sm:col-span-1">
+                        <div class="w-16 h-16 mx-auto bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:bg-teal-600 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-fish"></i>
+                        </div>
+                        <h3 class="font-extrabold text-slate-900 text-lg">Fish & Aquatics</h3>
+                        <p class="text-xs text-slate-500 mt-1">Tanks & Fish Food</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Supplies Showcase -->
+        <section id="supplies" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 border-b border-slate-100 pb-6">
+                    <div>
+                        <span class="text-brand-600 font-extrabold text-xs tracking-widest uppercase bg-brand-50 px-4 py-1.5 rounded-full border border-brand-100">Inventory Categories</span>
+                        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Essential Supplies</h2>
+                    </div>
+                    <p class="text-slate-500 text-xs sm:text-sm mt-2 md:mt-0 font-medium">*Inquire via WhatsApp for real-time stock availability</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Product 1 -->
+                    <div class="bg-white rounded-3xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                        <div class="relative overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?auto=format&fit=crop&q=80&w=600" alt="Pet Food" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-brand-600 text-white text-[11px] font-extrabold px-3 py-1 rounded-full shadow-md">Nutrition</span>
+                        </div>
+                        <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-extrabold text-slate-900 text-lg">Premium Pet Food</h3>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">High-protein nutrition, wet food, dry kibble, and specialty formulas for dogs, cats, birds, and fish.</p>
+                            </div>
+                            <a href="https://wa.me/919337627738?text=Hi%2C%20I%20want%20to%20enquire%20about%20Pet%20Food%20availability." target="_blank" rel="noopener" class="w-full py-2.5 text-center bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 font-bold rounded-xl text-xs transition duration-300 flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Inquire via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="bg-white rounded-3xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                        <div class="relative overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&q=80&w=600" alt="Pet Accessories" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-teal-600 text-white text-[11px] font-extrabold px-3 py-1 rounded-full shadow-md">Accessories</span>
+                        </div>
+                        <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-extrabold text-slate-900 text-lg">Toys, Leashes & Collars</h3>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Chew toys, body harnesses, leashes, cat scratchers, and interactive pet toys.</p>
+                            </div>
+                            <a href="https://wa.me/919337627738?text=Hi%2C%20I%20want%20to%20enquire%20about%20Pet%20Accessories." target="_blank" rel="noopener" class="w-full py-2.5 text-center bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 font-bold rounded-xl text-xs transition duration-300 flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Inquire via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="bg-white rounded-3xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                        <div class="relative overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600" alt="Cages & Aquariums" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-purple-600 text-white text-[11px] font-extrabold px-3 py-1 rounded-full shadow-md">Habitats</span>
+                        </div>
+                        <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-extrabold text-slate-900 text-lg">Cages & Aquariums</h3>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Spacious bird cages, rabbit hutches, glass aquariums, and aquatic filters.</p>
+                            </div>
+                            <a href="https://wa.me/919337627738?text=Hi%2C%20I%20want%20to%20enquire%20about%20Cages%20and%20Aquariums." target="_blank" rel="noopener" class="w-full py-2.5 text-center bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 font-bold rounded-xl text-xs transition duration-300 flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Inquire via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="bg-white rounded-3xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                        <div class="relative overflow-hidden h-52">
+                            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600" alt="Pet Grooming" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[11px] font-extrabold px-3 py-1 rounded-full shadow-md">Grooming</span>
+                        </div>
+                        <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-extrabold text-slate-900 text-lg">Care & Grooming</h3>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Gentle pet shampoos, fur brushes, de-shedding combs, and grooming essentials.</p>
+                            </div>
+                            <a href="https://wa.me/919337627738?text=Hi%2C%20I%20want%20to%20enquire%20about%20Grooming%20Supplies." target="_blank" rel="noopener" class="w-full py-2.5 text-center bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 font-bold rounded-xl text-xs transition duration-300 flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> Inquire via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section id="gallery" class="py-16 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <span class="text-brand-600 font-extrabold text-xs tracking-widest uppercase bg-brand-50 px-4 py-1.5 rounded-full border border-brand-100">Visual Gallery</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Pet Photo Gallery</h2>
+                    <p class="text-slate-500 text-xs sm:text-sm mt-1">Tap any photo to view in high resolution lightbox</p>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    <div class="relative overflow-hidden rounded-2xl h-52 shadow-sm cursor-pointer group" onclick="openModal('https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&q=80&w=1200')">
+                        <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&q=80&w=600" alt="Pet Gallery 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-2xl">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <div class="relative overflow-hidden rounded-2xl h-52 shadow-sm cursor-pointer group" onclick="openModal('https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?auto=format&fit=crop&q=80&w=1200')">
+                        <img src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?auto=format&fit=crop&q=80&w=600" alt="Pet Gallery 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-2xl">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <div class="relative overflow-hidden rounded-2xl h-52 shadow-sm cursor-pointer group" onclick="openModal('https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&q=80&w=1200')">
+                        <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&q=80&w=600" alt="Pet Gallery 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-2xl">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <div class="relative overflow-hidden rounded-2xl h-52 shadow-sm cursor-pointer group" onclick="openModal('https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&q=80&w=1200')">
+                        <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&q=80&w=600" alt="Pet Gallery 4" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-2xl">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Reviews Highlight -->
+        <section id="reviews" class="py-16 bg-white border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto bg-gradient-to-tr from-amber-50 via-orange-50 to-brand-50 p-8 sm:p-12 rounded-3xl border border-amber-200/80 text-center space-y-4 shadow-sm relative overflow-hidden">
+                    <span class="text-amber-800 font-extrabold text-xs tracking-wider uppercase bg-amber-100 px-4 py-1 rounded-full">Google Verified Business</span>
+                    
+                    <div class="flex items-center justify-center gap-3 text-4xl sm:text-5xl font-black text-slate-900">
+                        <span>3.9</span>
+                        <div class="flex text-amber-500 text-2xl sm:text-3xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-900 font-extrabold text-lg sm:text-xl">
+                        Based on 988 Verified Google Reviews
+                    </p>
+                    <p class="text-xs sm:text-sm text-slate-600 max-w-lg mx-auto leading-relaxed">
+                        Pet Palace is a trusted pet care destination in Bhubaneswar known for quality pet food, aquatics, birds, and helpful customer support.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://maps.google.com/?q=Pet+Palace+Sailashree+Vihar+Bhubaneswar" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-bold text-slate-800 bg-white px-5 py-2.5 rounded-xl shadow-sm border border-slate-200 hover:bg-slate-50 transition">
+                            <i class="fa-brands fa-google text-slate-700"></i> Open Google Maps Listing
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Section (Production Agency Feature) -->
+        <section id="faq" class="py-16 bg-slate-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <span class="text-brand-600 font-extrabold text-xs tracking-widest uppercase bg-brand-50 px-4 py-1.5 rounded-full border border-brand-100">Help & Information</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq('faq-1')" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center focus:outline-none">
+                            <span>Where is Pet Palace located in Bhubaneswar?</span>
+                            <i id="faq-1-icon" class="fa-solid fa-chevron-down text-brand-600 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faq-1" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100">
+                            Pet Palace is located at LC 116/9, Manas Rd, Phase II, Sailashree Vihar, Chandrasekharpur, Bhubaneswar, Odisha 751021.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq('faq-2')" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center focus:outline-none">
+                            <span>How can I check product or stock availability?</span>
+                            <i id="faq-2-icon" class="fa-solid fa-chevron-down text-brand-600 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faq-2" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100">
+                            You can directly message us on WhatsApp at +91 93376 27738 or click any "Inquire via WhatsApp" button on this website to get real-time stock updates.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq('faq-3')" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center focus:outline-none">
+                            <span>What pets do you cater to?</span>
+                            <i id="faq-3-icon" class="fa-solid fa-chevron-down text-brand-600 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faq-3" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100">
+                            We cater to dogs, cats, birds, rabbits, fish, and aquatic pets, offering food, accessories, habitats, and grooming supplies.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Contact Section -->
+        <section id="location" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <span class="text-brand-600 font-extrabold text-xs tracking-widest uppercase bg-brand-50 px-4 py-1.5 rounded-full border border-brand-100">Store Details</span>
+                            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Visit Store or Contact</h2>
+                        </div>
+
+                        <div class="space-y-4">
+                            <address class="not-italic flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
+                                <div class="p-3.5 bg-brand-50 text-brand-600 rounded-xl text-xl"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h3 class="font-extrabold text-slate-900 text-sm">Address</h3>
+                                    <p class="text-slate-600 text-xs sm:text-sm mt-0.5 leading-relaxed">LC 116/9, Manas Rd, Phase II, Sailashree Vihar, Chandrasekharpur, Bhubaneswar, Odisha 751021</p>
+                                </div>
+                            </address>
+
+                            <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
+                                <div class="p-3.5 bg-emerald-50 text-emerald-600 rounded-xl text-xl"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h3 class="font-extrabold text-slate-900 text-sm">Phone / WhatsApp</h3>
+                                    <p class="text-slate-600 text-xs sm:text-sm mt-0.5 font-extrabold">+91 93376 27738</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Direct WhatsApp Contact Form -->
+                        <form id="enquiry-form" class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200/80 space-y-4 shadow-sm">
+                            <h3 class="font-extrabold text-slate-900 text-base">Direct WhatsApp Enquiry Form</h3>
+                            <div id="form-error" class="hidden text-xs text-red-600 bg-red-50 p-3 rounded-xl font-bold">Please fill in both your name and query.</div>
+                            <div>
+                                <label for="cust-name" class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+                                <input type="text" id="cust-name" required placeholder="Enter full name" class="w-full px-4 py-3 text-sm bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none transition">
+                            </div>
+                            <div>
+                                <label for="cust-query" class="block text-xs font-bold text-slate-700 mb-1">Product / Pet Query *</label>
+                                <input type="text" id="cust-query" required placeholder="e.g., Dog Food, Bird Cage, Fish Food" class="w-full px-4 py-3 text-sm bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none transition">
+                            </div>
+                            <button type="submit" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm rounded-xl transition duration-300 shadow-md glow-emerald flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Send WhatsApp Enquiry
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Google Maps Embed -->
+                    <div class="bg-slate-100 rounded-3xl overflow-hidden border border-slate-200/80 shadow-sm h-[450px] lg:h-[600px] relative">
+                        <iframe 
+                            title="Pet Palace Location Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.050302821367!2d85.8115!3d20.3392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909337a7b8e5d%3A0x2d17ef4cd3f890e0!2sSailashree%20Vihar%2C%20Chandrasekharpur%2C%20Bhubaneswar%2C%20Odisha%20751021!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-200 flex items-center justify-between">
+                            <div>
+                                <div class="text-xs font-black text-slate-900">Pet Palace Store</div>
+                                <div class="text-[11px] text-slate-500">Sailashree Vihar, Bhubaneswar</div>
+                            </div>
+                            <a href="https://maps.google.com/?q=Pet+Palace+Sailashree+Vihar+Bhubaneswar" target="_blank" rel="noopener" class="text-xs bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded-xl font-bold transition">Open Map</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-10">
+                <div>
+                    <div class="text-white text-xl font-black mb-3 flex items-center gap-2">
+                        <span class="text-brand-500"><i class="fa-solid fa-paw"></i></span> Pet Palace
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">Your trusted neighbourhood pet shop in Bhubaneswar offering pet food, habitats, aquatics, and care supplies.</p>
+                </div>
+                <div>
+                    <h4 class="text-white text-xs font-extrabold uppercase tracking-wider mb-3">Navigation</h4>
+                    <ul class="text-xs space-y-2">
+                        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#categories" class="hover:text-white transition">Pet Categories</a></li>
+                        <li><a href="#supplies" class="hover:text-white transition">Supplies</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition">Gallery</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#location" class="hover:text-white transition">Location</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-xs font-extrabold uppercase tracking-wider mb-3">Store Contact</h4>
+                    <p class="text-xs text-slate-400">LC 116/9, Manas Rd, Sailashree Vihar, Bhubaneswar, Odisha 751021</p>
+                    <p class="text-xs text-white font-extrabold mt-2">Ph: +91 93376 27738</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-900 pt-6 text-center text-xs text-slate-500">
+                © 2026 Pet Palace assignment prototype. Built with responsive Tailwind CSS.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Lightbox Gallery Modal -->
+    <div id="image-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4 transition duration-300" onclick="closeModal()">
+        <div class="relative max-w-4xl w-full">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-3xl font-bold hover:text-brand-500 transition" aria-label="Close modal">&times; Close</button>
+            <img id="modal-img" src="" alt="Enlarged pet view" class="w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl">
+        </div>
+    </div>
+
+    <!-- Floating Desktop WhatsApp Widget -->
+    <a href="https://wa.me/919337627738?text=Hi%20Pet%20Palace%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener" class="hidden md:flex fixed bottom-8 right-8 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl items-center justify-center text-3xl transition duration-300 hover:scale-110 glow-emerald" aria-label="WhatsApp Direct Chat">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Mobile Action Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2.5 grid grid-cols-3 gap-2 shadow-2xl">
+        <a href="tel:+919337627738" class="flex flex-col items-center justify-center py-2 bg-slate-100 text-slate-800 rounded-xl text-xs font-bold active:scale-95 transition">
+            <i class="fa-solid fa-phone text-brand-600 mb-0.5"></i> Call
+        </a>
+        <a href="https://wa.me/919337627738?text=Hi%20Pet%20Palace%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener" class="flex flex-col items-center justify-center py-2 bg-emerald-600 text-white rounded-xl text-xs font-bold active:scale-95 transition shadow-sm">
+            <i class="fa-brands fa-whatsapp text-sm mb-0.5"></i> WhatsApp
+        </a>
+        <a href="https://maps.google.com/?q=Pet+Palace+Sailashree+Vihar+Bhubaneswar" target="_blank" rel="noopener" class="flex flex-col items-center justify-center py-2 bg-slate-900 text-white rounded-xl text-xs font-bold active:scale-95 transition">
+            <i class="fa-solid fa-location-dot text-brand-500 mb-0.5"></i> Map
+        </a>
+    </div>
+
+    <!-- Client-side Interactive Scripts -->
+    <script>
+        // Mobile Drawer Navigation Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.className = mobileMenu.classList.contains('hidden') ? 'fa-solid fa-bars-staggered' : 'fa-solid fa-xmark';
+        });
+
+        // Close mobile drawer when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars-staggered';
+            });
+        });
+
+        // FAQ Accordion Toggle
+        function toggleFaq(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Lightbox Functions
+        function openModal(src) {
+            document.getElementById('modal-img').src = src;
+            document.getElementById('image-modal').classList.remove('hidden');
+            document.getElementById('image-modal').classList.add('flex');
+        }
+        function closeModal() {
+            document.getElementById('image-modal').classList.add('hidden');
+            document.getElementById('image-modal').classList.remove('flex');
+        }
+
+        // WhatsApp Form Validation & Direct Redirect
+        document.getElementById('enquiry-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('cust-name').value.trim();
+            const query = document.getElementById('cust-query').value.trim();
+            const errorDiv = document.getElementById('form-error');
+
+            if(!name || !query) {
+                errorDiv.classList.remove('hidden');
+                return;
+            }
+            errorDiv.classList.add('hidden');
+            const message = `Hi Pet Palace, my name is ${encodeURIComponent(name)}. Query: ${encodeURIComponent(query)}`;
+            window.open(`https://wa.me/919337627738?text=${message}`, '_blank');
+        });
+    </script>
+</body>
+</html>
