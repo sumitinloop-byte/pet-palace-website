@@ -6,8 +6,8 @@ A dynamic, conversion-focused business website built for **Pet Palace**, a local
 
 ## 🔗 Live Demo & Links
 
-- **Live Deployed Site:** https://YOUR_VERCEL_APP_URL.vercel.app
-- **GitHub Repository:** https://github.com/YOUR_GITHUB_USERNAME/pet-palace-website
+- **Live Deployed Site:** https://pet-palace-bhubaneswar.netlify.app
+- **GitHub Repository:** https://github.com/sumitinloop-byte/pet-palace-website
 
 ---
 
@@ -55,4 +55,5 @@ This project creates a modern digital web presence aimed at converting local dir
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_GITHUB_USERNAME/pet-palace-website.git](https://github.com/YOUR_GITHUB_USERNAME/pet-palace-website.git)
+   git clone https://github.com/sumitinloop-byte/pet-palace-website.git
+   ```
