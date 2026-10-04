@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth js">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Pet Palace | Premium Pet Care & Supplies in Sailashree Vihar, Bhubaneswar</title>
     
     <!-- Meta & SEO Tags -->
@@ -102,6 +102,118 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #ea580c;
         }
+
+    /* ===== UI Upgrade Layer (design only - no content changes) ===== */
+    :root{--ease:cubic-bezier(.22,1,.36,1)}
+    html{-webkit-text-size-adjust:100%;scroll-padding-top:76px}
+    html body{overflow-x:hidden;-webkit-tap-highlight-color:transparent;
+      background:linear-gradient(180deg,#fff7ed 0,#f8fafc 420px,#f8fafc 100%);
+      padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+    @media(min-width:768px){html body{padding-bottom:0}}
+    img{max-width:100%}
+    section[id]{scroll-margin-top:76px}
+
+    /* Accessibility: visible focus */
+    a:focus-visible,button:focus-visible,input:focus-visible,[role=button]:focus-visible{
+      outline:3px solid #f97316;outline-offset:3px;border-radius:12px}
+
+    /* Announcement bar & header */
+    html body header.glass-nav{box-shadow:0 6px 24px -12px rgba(124,45,18,.25)}
+    html body header nav a{position:relative}
+    html body header nav a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;
+      background:linear-gradient(90deg,#ea580c,#f59e0b);border-radius:2px;transition:width .3s var(--ease)}
+    html body header nav a:hover::after{width:100%}
+    #mobile-menu:not(.hidden){animation:menuIn .3s var(--ease)}
+    #mobile-menu a{padding:.9rem .25rem !important;font-size:1rem;display:flex;align-items:center;justify-content:space-between}
+    #mobile-menu a::after{content:"\203A";color:#ea580c;font-size:1.4rem;line-height:1}
+    @keyframes menuIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+
+    /* Section tag pills */
+    html body section span.uppercase{display:inline-block}
+    html body section h2,html body section h4{letter-spacing:-.02em;text-wrap:balance}
+    html body section h2{font-size:clamp(1.75rem,5.5vw,2.5rem)}
+    html body section{padding-top:clamp(3rem,8vw,5rem);padding-bottom:clamp(3rem,8vw,5rem)}
+    html body main > section:first-child{padding-top:clamp(2rem,6vw,5rem)}
+
+    /* Hero */
+    html body h1{font-size:clamp(2rem,8vw,3.75rem);text-wrap:balance}
+    @media(max-width:640px){
+      html body main > section:first-child img{height:300px !important}
+      html body main > section:first-child .grid.grid-cols-3 > div{padding:.7rem .4rem}
+    }
+    html body main > section:first-child .rounded-3xl.overflow-hidden{box-shadow:0 30px 60px -20px rgba(124,45,18,.45)}
+
+    /* Cards */
+    html body #categories .grid > div,
+    html body #supplies .grid > div,
+    html body address,
+    html body #location .space-y-4 > div,
+    html body #faq .space-y-4 > div{transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .3s}
+    html body #categories .grid > div{border-radius:1.5rem;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+    html body #categories .grid > div:hover{box-shadow:0 22px 40px -18px rgba(234,88,12,.35);border-color:#fdba74}
+    html body #categories .grid > div:active{transform:scale(.97)}
+    html body #supplies .grid > div:hover{transform:translateY(-6px);box-shadow:0 26px 50px -22px rgba(15,23,42,.35)}
+    html body #supplies .grid > div p{font-size:.875rem;line-height:1.55}
+    html body #supplies .grid > div h3{letter-spacing:-.01em}
+    html body #supplies .grid a{min-height:46px;font-size:.8rem}
+    @media(hover:none){html body #supplies .grid > div .group-hover\:scale-105{transform:none}}
+
+    /* Gallery */
+    html body #gallery .grid > div{height:auto !important;aspect-ratio:1/1;border-radius:1.25rem;
+      box-shadow:0 10px 25px -15px rgba(15,23,42,.5)}
+    @media(min-width:768px){html body #gallery .grid > div{aspect-ratio:4/5}}
+    html body #gallery .grid > div::after{content:"";position:absolute;inset:0;border-radius:inherit;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.4);pointer-events:none}
+
+    /* Reviews */
+    html body #reviews .max-w-3xl{box-shadow:0 30px 60px -30px rgba(245,158,11,.55)}
+
+    /* FAQ */
+    html body #faq button{min-height:60px;gap:1rem}
+    html body #faq .space-y-4 > div:hover{border-color:#fdba74}
+    html body #faq [id^="faq-"]:not([id$="-icon"]):not(.hidden){animation:faqIn .35s var(--ease);font-size:.9rem;line-height:1.65;padding-top:1rem}
+    @keyframes faqIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+    /* Form */
+    html body #enquiry-form input{font-size:16px;min-height:50px}/* 16px stops iOS zoom */
+    html body #enquiry-form{box-shadow:0 20px 40px -24px rgba(15,23,42,.3)}
+
+    /* Map */
+    @media(max-width:1023px){html body #location iframe{min-height:380px}
+      html body #location .h-\[450px\]{height:420px}}
+
+    /* Buttons: tactile + WhatsApp pulse ring */
+    html body a[class*="rounded-"],html body button[class*="rounded-"]{transition-property:transform,box-shadow,background-color,color,opacity}
+    html body a.wa-blink-btn:active,html body button.wa-blink-btn:active{transform:scale(.97)}
+    .wa-blink-btn{position:relative;isolation:isolate}
+    .wa-blink-btn::before{content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;
+      box-shadow:0 0 0 0 rgba(16,185,129,.55);animation:waRing 2.4s infinite}
+    @keyframes waRing{0%{box-shadow:0 0 0 0 rgba(16,185,129,.5)}70%,100%{box-shadow:0 0 0 14px rgba(16,185,129,0)}}
+
+    /* Mobile sticky bar: safe area + bigger touch targets */
+    html body .md\:hidden.fixed.bottom-0{padding-bottom:calc(.6rem + env(safe-area-inset-bottom,0px));
+      border-radius:1.25rem 1.25rem 0 0;box-shadow:0 -10px 30px -10px rgba(15,23,42,.25)}
+    html body .md\:hidden.fixed.bottom-0 a{min-height:54px;font-size:.75rem}
+    html body .md\:hidden.fixed.bottom-0 i{font-size:1.1rem}
+
+    /* Modal */
+    #image-modal{animation:fadeIn .25s ease}
+    #image-modal.flex #modal-img{animation:zoomIn .35s var(--ease)}
+    #image-modal .relative > button{top:-3rem;font-size:1.1rem;background:rgba(255,255,255,.12);padding:.4rem 1rem;border-radius:9999px}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    @keyframes zoomIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+
+    /* Scroll reveal (only when JS is on) */
+    .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .js .reveal.in{opacity:1;transform:none}
+
+    /* Footer */
+    html body footer{background:linear-gradient(180deg,#0f172a,#020617)}
+    html body footer a{display:inline-block;padding:.2rem 0}
+
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation:none !important;transition:none !important}
+      .js .reveal{opacity:1;transform:none}}
     </style>
 </head>
 <body class="bg-slate-900/5 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white pb-20 md:pb-0">
@@ -149,7 +261,7 @@
             </div>
 
             <!-- Mobile Menu Toggle Button -->
-            <button id="mobile-menu-btn" class="lg:hidden text-slate-800 p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-xl focus:outline-none transition active:scale-95" aria-label="Open Navigation Menu">
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-800 p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-xl focus:outline-none transition active:scale-95" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-menu">
                 <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
             </button>
         </div>
@@ -507,7 +619,7 @@
                 <div class="space-y-4">
                     <!-- FAQ Item 1 -->
                     <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq('faq-1')" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center focus:outline-none">
+                        <button onclick="toggleFaq('faq-1')" aria-expanded="false" aria-controls="faq-1" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center focus:outline-none">
                             <span>Where is Pet Palace located in Bhubaneswar?</span>
                             <i id="faq-1-icon" class="fa-solid fa-chevron-down text-brand-600 transition-transform duration-200"></i>
                         </button>
@@ -518,7 +630,7 @@
 
                     <!-- FAQ Item 2 -->
                     <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq('faq-2')" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center focus:outline-none">
+                        <button onclick="toggleFaq('faq-2')" aria-expanded="false" aria-controls="faq-2" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center focus:outline-none">
                             <span>How can I check product or stock availability?</span>
                             <i id="faq-2-icon" class="fa-solid fa-chevron-down text-brand-600 transition-transform duration-200"></i>
                         </button>
@@ -529,7 +641,7 @@
 
                     <!-- FAQ Item 3 -->
                     <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq('faq-3')" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center focus:outline-none">
+                        <button onclick="toggleFaq('faq-3')" aria-expanded="false" aria-controls="faq-3" class="w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center focus:outline-none">
                             <span>What pets do you cater to?</span>
                             <i id="faq-3-icon" class="fa-solid fa-chevron-down text-brand-600 transition-transform duration-200"></i>
                         </button>
@@ -682,6 +794,7 @@
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             menuIcon.className = mobileMenu.classList.contains('hidden') ? 'fa-solid fa-bars-staggered' : 'fa-solid fa-xmark';
+            menuBtn.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
         });
 
         // Close mobile drawer when clicking a link
@@ -699,9 +812,11 @@
             if (content.classList.contains('hidden')) {
                 content.classList.remove('hidden');
                 icon.style.transform = 'rotate(180deg)';
+                content.previousElementSibling.setAttribute('aria-expanded', 'true');
             } else {
                 content.classList.add('hidden');
                 icon.style.transform = 'rotate(0deg)';
+                content.previousElementSibling.setAttribute('aria-expanded', 'false');
             }
         }
 
@@ -710,11 +825,14 @@
             document.getElementById('modal-img').src = src;
             document.getElementById('image-modal').classList.remove('hidden');
             document.getElementById('image-modal').classList.add('flex');
+            document.body.style.overflow = 'hidden';
         }
         function closeModal() {
             document.getElementById('image-modal').classList.add('hidden');
             document.getElementById('image-modal').classList.remove('flex');
+            document.body.style.overflow = '';
         }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
         // WhatsApp Form Validation & Direct Redirect
         document.getElementById('enquiry-form').addEventListener('submit', function(e) {
@@ -728,9 +846,22 @@
                 return;
             }
             errorDiv.classList.add('hidden');
-            const message = `Hi Pet Palace, my name is ${encodeURIComponent(name)}. Query: ${encodeURIComponent(query)}`;
-            window.open(`https://wa.me/919337627738?text=${message}`, '_blank');
+            const message = encodeURIComponent(`Hi Pet Palace, my name is ${name}. Query: ${query}`);
+            window.open(`https://wa.me/919337627738?text=${message}`, '_blank', 'noopener');
         });
+
+        // Smooth scroll-reveal for sections/cards
+        (function () {
+            const targets = document.querySelectorAll('main section .grid > div, main section .max-w-3xl, #enquiry-form, #faq .space-y-4 > div, #location .space-y-4 > *');
+            if (!('IntersectionObserver' in window)) return;
+            targets.forEach((el, i) => { el.classList.add('reveal'); el.style.transitionDelay = ((i % 4) * 70) + 'ms'; });
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(en => { if (en.isIntersecting) { const t = en.target; t.classList.add('in'); io.unobserve(t);
+                        // release reveal styles so hover/press effects work normally afterwards
+                        setTimeout(() => { t.classList.remove('reveal', 'in'); t.style.transitionDelay = ''; }, 1000); } });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            targets.forEach(el => io.observe(el));
+        })();
     </script>
 </body>
 </html>
